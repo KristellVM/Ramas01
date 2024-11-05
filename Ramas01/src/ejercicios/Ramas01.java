@@ -25,6 +25,8 @@ public class Ramas01 {
 			 case 1:
 				nota = agregarNota("Agregar nota",sc);
 				System.out.println("La nota agregada es: "+nota);
+				notaMin = Math.min(notaMin, nota);
+				notaMax = Math.max(notaMax, nota);
 				suma = suma+nota;
 				cont++;
 				break;
@@ -33,11 +35,9 @@ public class Ramas01 {
 				System.out.println("El promedio de notas es: "+promedio);
 				break;
 			case 3:
-				notaMax = Math.max(notaMax, nota);
 				System.out.println("La nota máxima es: "+notaMax);
 				break;
 			case 4:
-				notaMin = Math.min(notaMin, nota);
 				System.out.println("La nota más baja es: "+notaMin);
 				break;
 			case 0:
